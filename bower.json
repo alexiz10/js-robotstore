@@ -1,0 +1,17 @@
+{
+  "name": "js-robotstore",
+  "homepage": "https://github.com/alexiz10/js-robotstore",
+  "authors": [
+    "Alexiz Hernandez <alexiz_hernandez@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
