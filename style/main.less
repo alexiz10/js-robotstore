@@ -1,0 +1,26 @@
+// Fonts
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-Black.ttf");
+    src: url("fonts/Roboto-Black.woff") format("woff"),
+         url("fonts/Roboto-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+// Resusables
+@logo-size: 180px;
+// Styling
+.headerlogo {
+    display: inline-block;
+    width: @logo-size;
+    height: @logo-size;
+    img {
+        display: inherit;
+        width: @logo-size;
+        height: @logo-size;
+    }
+}
+#headername {
+    font-size: 84px;
+    font-family: Roboto, sans-serif;
+}
