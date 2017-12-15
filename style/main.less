@@ -1,19 +1,29 @@
 // Fonts
 @font-face {
-    font-family: 'Roboto';
-    src: url("fonts/Roboto-Black.ttf");
-    src: url("fonts/Roboto-Black.woff") format("woff"),
-         url("fonts/Roboto-Black.woff2") format("woff2");
+    font-family: 'Mr-Robot';
+    src: url("fonts/mr-robot/Mr-Robot.ttf");
+    src: url("fonts/mr-robot/Mr-Robot.woff") format("woff"),
+         url("fonts/mr-robot/Mr-Robot.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 // Resusables
-@logo-size: 180px;
+@logo-size: 80px;
+@logo-text-color: #DA212F;
 // Styling
+body {
+    margin: 0;
+}
+header {
+    div {
+        border-bottom: 1px solid @logo-text-color;
+    }
+}
 .headerlogo {
     display: inline-block;
     width: @logo-size;
     height: @logo-size;
+    vertical-align: middle;
     img {
         display: inherit;
         width: @logo-size;
@@ -21,6 +31,14 @@
     }
 }
 #headername {
-    font-size: 84px;
-    font-family: Roboto, sans-serif;
+    font-size: 42px;
+    font-family: 'Mr-Robot', sans-serif;
+    position: absolute;
+    float: left;
+    margin: 17px 0 0 8px;
+    color: @logo-text-color;
+}
+.searchbox {
+    float: right;
+    margin: 8px 8px 0 0;
 }
