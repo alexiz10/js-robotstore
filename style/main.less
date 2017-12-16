@@ -10,6 +10,8 @@
 // Resusables
 @logo-size: 80px;
 @logo-text-color: #DA212F;
+@nav-bgcolor: #333333;
+@nav-bgcolor-hover: #111111;
 // Styling
 body {
     margin: 0;
@@ -17,6 +19,31 @@ body {
 header {
     div {
         border-bottom: 1px solid @logo-text-color;
+    }
+    nav {
+        height: 48px;
+        background-color: @nav-bgcolor;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: @nav-bgcolor;
+            float: left;
+            li {
+                float: left;
+                a {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: @nav-bgcolor-hover;
+                    }
+                }
+            }
+        }
     }
 }
 .headerlogo {
@@ -41,4 +68,7 @@ header {
 .searchbox {
     float: right;
     margin: 8px 8px 0 0;
+}
+.active {
+    background-color: #444444;
 }
