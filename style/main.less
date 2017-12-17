@@ -32,6 +32,10 @@
 @nav-bgcolor-active: #444444;
 @nav-bgcolor-hover: #111111;
 @footer-bgcolor: #111111;
+@font-mr-robot: 'Mr-Robot', sans-serif;
+@font-roboto-medium: 'Roboto-Medium', sans-serif;
+@font-roboto-light: 'Roboto-Light', sans-serif;
+@font-roboto-light-italic: 'Roboto-LightItalic', sans-serif;
 // Styling
 body {
     background-color: #F5F5F5;
@@ -42,7 +46,7 @@ header {
         background-color: white;
     }
     nav {
-        font-family: 'Roboto-Medium', sans-serif;
+        font-family: @font-roboto-medium;
         font-style: normal;
         height: 48px;
         background-color: @nav-bgcolor;
@@ -82,7 +86,7 @@ header {
 }
 #headername {
     font-size: 42px;
-    font-family: 'Mr-Robot', sans-serif;
+    font-family: @font-mr-robot;
     position: absolute;
     float: left;
     margin: 17px 0 0 8px;
@@ -113,14 +117,14 @@ header {
 }
 #welcometext {
     header {
-        font-family: 'Roboto-Medium', sans-serif;
+        font-family: @font-roboto-medium;
         font-size: 48px;
     }
     span {
-        font-family: 'Roboto-Light', sans-serif;
+        font-family: @font-roboto-light;
         p {
             mark {
-                font-family: 'Roboto-Medium', sans-serif;
+                font-family: @font-roboto-medium;
             }
         }
     }
@@ -131,10 +135,10 @@ footer {
     background-color: @footer-bgcolor;
     color: white;
     padding: 14px;
-    font-family: 'Roboto-Light', sans-serif;
+    font-family: @font-roboto-light;
     p {
         address {
-            font-family: 'Roboto-LightItalic', sans-serif;
+            font-family: @font-roboto-light-italic;
         }
         a {
             &:visited {
@@ -149,25 +153,25 @@ footer {
 fieldset {
     border: none;
     legend {
-        font-family: 'Roboto-Medium', sans-serif;
+        font-family: @font-roboto-medium;
         font-size: 24px;
     }
     h5 {
-        font-family: 'Roboto-Medium', sans-serif;
+        font-family: @font-roboto-medium;
     }
-    font-family: 'Roboto-Light', sans-serif;
+    font-family: @font-roboto-light;
 }
 #robo1, #robo2, #robo3 {
-    font-family: 'Roboto-Medium', sans-serif;
+    font-family: @font-roboto-medium;
     h5 {
-        font-family: 'Roboto-Light', sans-serif;
+        font-family: @font-roboto-light;
     }
 }
 form {
     fieldset {
         p {
             label {
-                font-family: 'Roboto-Light', sans-serif;
+                font-family: @font-roboto-light;
             }
         }
     }
