@@ -11,14 +11,17 @@
 @logo-size: 80px;
 @logo-text-color: #DA212F;
 @nav-bgcolor: #333333;
+@nav-bgcolor-active: #444444;
 @nav-bgcolor-hover: #111111;
 // Styling
 body {
     margin: 0;
+    background-color: #F5F5F5;
 }
 header {
     div {
         border-bottom: 1px solid @logo-text-color;
+        background-color: white;
     }
     nav {
         height: 48px;
@@ -70,5 +73,5 @@ header {
     margin: 8px 8px 0 0;
 }
 .active {
-    background-color: #444444;
+    background-color: @nav-bgcolor-active;
 }
