@@ -1,7 +1,7 @@
 $(document).ready(() => {
-    $("input, textarea, select").on("blur", function() {
+    $("#fullname, #email, #yloc, #yquest").on("blur", () => {
         $(this).removeClass("highlight");
-    }).on("focus", function() {
+    }).on("focus", () => {
         $(this).addClass("highlight");
-    })
+    });
 });
