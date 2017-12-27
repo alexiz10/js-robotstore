@@ -9,6 +9,13 @@ $(document).ready(() => {
         $(this).addClass('highlight');
     });
     /**
+     * This will visually affect hardware and robots when the user
+     * interacts with them using their mouse.
+     */
+    $('article, :checkbox, :radio').hover(function(){
+        $(this).toggleClass('highlight');
+    });
+    /**
      * This will allow the user to serach the robots page and it will
      * hide and show robots according to the user's search.
      */
