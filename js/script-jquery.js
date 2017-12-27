@@ -12,7 +12,7 @@ $(document).ready(() => {
      * This will visually affect hardware and robots when the user
      * interacts with them using their mouse.
      */
-    $('article, :checkbox, :radio').hover(function(){
+    $('article, :checkbox, :radio').parent().hover(function(){
         $(this).toggleClass('highlight');
     });
     /**
