@@ -20,6 +20,6 @@ for (var i=0;i<document.forms.length;i++) {
             results += radiobuttons[m].name + '=' + radiobuttons[m].value + '\n';
         }
         // alert results
-        alert(results);
+        console.log(results);
     }
 )};
